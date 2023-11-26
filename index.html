@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 7</title>
+    <link media="all" rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    <div class="form-container">
+        <form id="form1" autocomplete="on">
+            <fieldset action="https://chat.openai.com/" method="post">
+                <legend>Контактна інформація</legend>
+                <div class="div1">
+                    <label for="name">Ім'я:</label><input type="text" id="name" name="name" required>
+                </div>
+                <div class="div1">
+                    <label for="email">Електронна адреса:</label><input type="email" id="email" name="email" required>
+                </div>
+                <div class="div1">
+                    <label for="phone">Номер телефону:</label><input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="div1">
+                    <label for="country">Країна:</label>
+                    <select id="country" name="country" required>
+                        <option value="ukraine">Україна</option>
+                        <option value="usa">США</option>
+                        <option value="canada">Канада</option>
+                        <option value="germany">Німеччина</option>
+                        <option value="france">Франція</option>
+                        <option value="italy">Італія</option>
+                        <option value="spain">Іспанія</option>
+                        <option value="uk">Великобританія</option>
+                        <option value="japan">Японія</option>
+                        <option value="china">Китай</option>
+                    </select>
+                </div>     
+                <label for="message">Додаткова інформація:</label>
+                <textarea id="message" name="message" required></textarea>
+                <div class="custom-checkbox-container">
+                    <input type="checkbox" id="option1" name="option1" class="custom-checkbox-input" checked>
+                    <label for="option1" class="custom-checkbox-label">Опція 1</label>
+                </div>
+                <div class="custom-checkbox-container">
+                    <input type="checkbox" id="option2" name="option2" class="custom-checkbox-input">
+                    <label for="option2" class="custom-checkbox-label">Опція 2</label>
+                </div>
+                <div class="custom-checkbox-container">
+                    <input type="checkbox" id="option3" name="option3" class="custom-checkbox-input">
+                    <label for="option3" class="custom-checkbox-label">Опція 3</label>
+                </div>
+            </fieldset>
+        </form> 
+        <button form="form1" type="submit">Відправити</button>  
+    </div>
+</body>
+</html>
